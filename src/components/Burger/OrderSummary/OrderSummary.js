@@ -1,11 +1,11 @@
-import React from 'react';
-import Hoc from '../../../hoc/Hoc';
+import React from "react";
+import Hoc from "../../../hoc/Hoc";
 
 const oderSummary = props => {
   const ingredientSummary = Object.keys(props.ingredients).map(igKey => {
     return (
       <li key={igKey}>
-        <span style={{ textTransform: 'capitalize' }}>{igKey}</span>:{' '}
+        <span style={{ textTransform: "capitalize" }}>{igKey}</span>:{" "}
         {props.ingredients[igKey]}
       </li>
     );
@@ -16,6 +16,8 @@ const oderSummary = props => {
       <p>A delicious burger with the following ingredients:</p>
       <ul>{ingredientSummary}</ul>
       <p>Continue to Checkout?</p>
+      <button>CANCEL</button>
+      <button>CONTINUE</button>
     </Hoc>
   );
 };
