@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Hoc from "../../../hoc/Hoc";
+import Hoc from "../../../hoc/Hoc/Hoc";
 import Button from "../../UI/Button/Button";
 
 class OderSummary extends Component {
